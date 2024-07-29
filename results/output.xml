@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.12.3 on win32)" generated="20240729 16:56:44.495" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot-Actions-Main" source="C:\Users\iuric\Downloads\robot-actions-main">
+<suite id="s1-s1" name="Tests" source="C:\Users\iuric\Downloads\robot-actions-main\tests">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\iuric\Downloads\robot-actions-main\tests\login.robot">
+<test id="s1-s1-s1-t1" name="CENÁRIO 03: Pesquisa de artigo com texto parcial da noticia no blog do agi" line="21">
+<kw name="Start Browser" library="base" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${IS_HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240729 16:56:46.989" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\iuric\\Downloads\\robot-actions-main\\results\\browser\\traces\\e61e68d7-786e-4ad8-a151-9dbc8809733e"}</msg>
+<msg timestamp="20240729 16:56:47.317" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\iuric\\Downloads\\robot-actions-main\\results\\browser\\traces\\e61e68d7-786e-4ad8-a151-9dbc8809733e"}</msg>
+<status status="PASS" starttime="20240729 16:56:46.988" endtime="20240729 16:56:47.318"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240729 16:56:53.376" level="INFO">Successfully initialized new page object and opened url: https://blogdoagi.com.br/</msg>
+<msg timestamp="20240729 16:56:53.376" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20240729 16:56:47.320" endtime="20240729 16:56:53.376"/>
+</kw>
+<status status="PASS" starttime="20240729 16:56:46.987" endtime="20240729 16:56:53.377"/>
+</kw>
+<kw name="Quando pesquiso artigo com" library="actions">
+<arg>Agibank se prepara pa</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20240729 16:56:53.381" level="INFO">Clicks the element 'xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg']'.</msg>
+<status status="PASS" starttime="20240729 16:56:53.380" endtime="20240729 16:56:53.508"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>xpath=//input[@id='search-field']</arg>
+<arg>${artigo}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20240729 16:56:53.509" level="INFO">Fills the text 'Agibank se prepara pa' in the given field.</msg>
+<status status="PASS" starttime="20240729 16:56:53.508" endtime="20240729 16:56:53.546"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20240729 16:56:53.547" level="INFO">Clicks the element 'xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg']'.</msg>
+<status status="PASS" starttime="20240729 16:56:53.546" endtime="20240729 16:56:53.791"/>
+</kw>
+<status status="PASS" starttime="20240729 16:56:53.379" endtime="20240729 16:56:53.791"/>
+</kw>
+<kw name="Então vejo no resultado da pesquisa" library="actions">
+<arg>Agibank se prepara para transacionar via Drex</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>xpath=//h2[@class='entry-title ast-blog-single-element']</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240729 16:56:59.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240729 16:56:59.058" level="INFO">See also file:///C:/Users/iuric/Downloads/robot-actions-main/results/playwright-log.txt for additional details.</msg>
+<msg timestamp="20240729 16:56:59.059" level="FAIL">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('//h2[@class=\'entry-title ast-blog-single-element\']') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<status status="FAIL" starttime="20240729 16:56:53.794" endtime="20240729 16:56:59.070"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//h2[@class='entry-title ast-blog-single-element']</arg>
+<arg>equal</arg>
+<arg>${resultadopesquisa}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20240729 16:56:59.070" endtime="20240729 16:56:59.071"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//img[@class='attachment-large size-large wp-post-image']</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" starttime="20240729 16:56:59.071" endtime="20240729 16:56:59.072"/>
+</kw>
+<status status="FAIL" starttime="20240729 16:56:53.793" endtime="20240729 16:56:59.072"/>
+</kw>
+<kw name="Finish Browser" library="base" type="TEARDOWN">
+<kw name="Take Screenshot" library="Browser">
+<arg>fullPage=true</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240729 16:56:59.552" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240729 16:56:59.077" endtime="20240729 16:56:59.552"/>
+</kw>
+<status status="PASS" starttime="20240729 16:56:59.074" endtime="20240729 16:56:59.553"/>
+</kw>
+<tag>pesquisa</tag>
+<status status="FAIL" starttime="20240729 16:56:46.979" endtime="20240729 16:56:59.554">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('//h2[@class=\'entry-title ast-blog-single-element\']') to be visible[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</test>
+<doc>Suíte de testes de login</doc>
+<status status="FAIL" starttime="20240729 16:56:44.662" endtime="20240729 16:56:59.670"/>
+</suite>
+<status status="FAIL" starttime="20240729 16:56:44.656" endtime="20240729 16:56:59.685"/>
+</suite>
+<status status="FAIL" starttime="20240729 16:56:44.517" endtime="20240729 16:56:59.690"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">pesquisa</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Actions-Main">Robot-Actions-Main</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Robot-Actions-Main.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Login">Robot-Actions-Main.Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

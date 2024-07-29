@@ -1,0 +1,72 @@
+{"level":30,"time":"2024-07-29T19:56:46.805Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Listening on 57413"}
+(node:19280) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-07-29T19:56:46.974Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:46.976Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:46.983Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:46.983Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:46.994Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-07-29T19:56:47.312Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Adding browser to stack: chromium, version: 125.0.6422.26"}
+{"level":30,"time":"2024-07-29T19:56:47.314Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-07-29T19:56:47.313Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-07-29T19:56:47.329Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-07-29T19:56:47.330Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-07-29T19:56:47.355Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active context"}
+{"level":30,"time":"2024-07-29T19:56:49.096Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Video path: undefined"}
+{"level":30,"time":"2024-07-29T19:56:49.096Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active page"}
+{"level":30,"time":"2024-07-29T19:56:53.371Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method newPage"}
+{"level":30,"time":"2024-07-29T19:56:53.386Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method click"}
+{"level":30,"time":"2024-07-29T19:56:53.387Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg'] in page."}
+{"level":30,"time":"2024-07-29T19:56:53.505Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method click"}
+{"level":30,"time":"2024-07-29T19:56:53.511Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-07-29T19:56:53.512Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Strict mode is enabled, find Locator with xpath=//input[@id='search-field'] in page."}
+{"level":30,"time":"2024-07-29T19:56:53.543Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method fillText"}
+{"level":30,"time":"2024-07-29T19:56:53.552Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method click"}
+{"level":30,"time":"2024-07-29T19:56:53.552Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label='Link do ícone de pesquisa']//span[@class='ast-icon icon-search']//*[name()='svg'] in page."}
+{"level":30,"time":"2024-07-29T19:56:53.789Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method click"}
+{"level":30,"time":"2024-07-29T19:56:53.797Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-07-29T19:56:53.798Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Strict mode is enabled, find Locator with xpath=//h2[@class='entry-title ast-blog-single-element'] in page."}
+{"level":30,"time":"2024-07-29T19:56:58.811Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  [2m- waiting for locator('//h2[@class=\'entry-title ast-blog-single-element\']') to be visible[22m
+
+    at waitForElementState (C:\Users\iuric\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\iuric\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10691:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-07-29T19:56:58.871Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-07-29T19:56:58.872Z","pid":19280,"hostname":"DESKTOP-081CSLI","Take screenshot with options: ":{"path":"C:\\Users\\iuric\\Downloads\\robot-actions-main\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-07-29T19:56:59.052Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-07-29T19:56:59.080Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-07-29T19:56:59.080Z","pid":19280,"hostname":"DESKTOP-081CSLI","Take screenshot with options: ":{"path":"C:\\Users\\iuric\\Downloads\\robot-actions-main\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-07-29T19:56:59.549Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-07-29T19:56:59.566Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.572Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.579Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.583Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.595Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active context"}
+{"level":30,"time":"2024-07-29T19:56:59.596Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changing current active page: page=57651155-c2e5-4656-8223-779f4ab4df16"}
+{"level":30,"time":"2024-07-29T19:56:59.596Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active page"}
+{"level":30,"time":"2024-07-29T19:56:59.601Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.608Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.613Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-07-29T19:56:59.614Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-07-29T19:56:59.619Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-07-29T19:56:59.620Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-07-29T19:56:59.626Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changing current active page: page=57651155-c2e5-4656-8223-779f4ab4df16"}
+{"level":30,"time":"2024-07-29T19:56:59.627Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active page"}
+{"level":30,"time":"2024-07-29T19:56:59.633Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.637Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.643Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active context"}
+{"level":30,"time":"2024-07-29T19:56:59.643Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changing current active page: page=57651155-c2e5-4656-8223-779f4ab4df16"}
+{"level":30,"time":"2024-07-29T19:56:59.643Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Changed active page"}
+{"level":30,"time":"2024-07-29T19:56:59.647Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-07-29T19:56:59.656Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Removed page=a0bcf9a5-dec6-4a83-8322-585e106f3221 from context=c1a617e3-4f7e-4129-8197-8e28e9a37794 page stack"}
+{"level":30,"time":"2024-07-29T19:56:59.663Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-07-29T19:56:59.679Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.679Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-07-29T19:56:59.839Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-07-29T19:56:59.960Z","pid":19280,"hostname":"DESKTOP-081CSLI","msg":"End of node method closeAllBrowsers"}
